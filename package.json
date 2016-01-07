@@ -1,0 +1,45 @@
+{
+    "name"          : "tilelive-clima",
+    "version"       : "4.5.2",
+    "main"          : "./lib/tilelive.js",
+    "description"   : "Frontend for various tile backends, mapnik and mbtiles (compatible with node v4)",
+    "url"           : "http://github.com/mapbox/tilelive.js",
+    "keywords"      : ["map", "server", "mapnik", "tms"],
+    "licenses"      : [{
+        "type": "BSD"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/paulovieira/tilelive-clima"
+    },
+    "author": {
+      "name": "MapBox",
+      "url": "http://mapbox.com/",
+      "email": "info@mapbox.com"
+    },
+    "contributors": [
+        "Tom MacWright <tmcw>",
+        "Will White <willwhite>",
+        "Dane Springmeyer <springmeyer>",
+        "Young Hahn <yhahn>",
+        "Konstantin Käfer <kkaefer>"
+    ],
+    "dependencies": {
+        "optimist": "~0.4.0",
+        "sphericalmercator": "~1.0.1"
+    },
+    "devDependencies": {
+        "mbtiles": "~0.2.8",
+        "tilejson": "~0.6.0",
+        "tilelive-mapnik": "~0.6.2"
+    },
+    "bin": {
+        "tilelive-copy": "./bin/copy"
+    },
+    "engines": {
+        "node": ">= 0.6.0 < 0.11.0"
+    },
+    "scripts": {
+        "test": "make test"
+    }
+}
